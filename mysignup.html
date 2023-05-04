@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>SIGN UP</title>
+    <link rel="icon" type="image/png" href="ssslogo.png" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(purple.jpg);
+        }
+        .container {
+            max-width: 500px;
+            min-height: 700px;
+            width: 100%;
+            background: #F98FF1;
+            padding 25px 30px;
+            border-radius: 5px;
+        }
+            .container .title {
+                font-size: 25px;
+                margin-left: 20px;
+                margin-bottom: 15px;
+                font-weight: 300;
+                position: relative;
+				font-family: comic sans ms;
+            }
+            
+        .container .title::before{
+            content:'';
+            position:absolute;
+            left:0;
+            bottom:0;
+            height:3px;
+            width:180px;
+            background : #9b59b6;
+        }
+        .container form .user-details{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+			color: #310A2B;
+        }
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            margin-left: 10px;
+            width: calc(100%/2-20px);
+        }
+        .user-details .input-box .details{
+            display: block;
+            font-weight:500;
+            margin-bottom:5px;
+        }
+        .user-details .input-box input{
+            height:45px;
+            width:100%;
+            outline: none;
+            border-radius:5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size:16px;
+        }
+        form .gender-details .gender-title{
+            margin-left:10px;
+            font-size:20px;
+            font-weight:500;
+        }
+        form .gender-details .category{
+            display:flex;
+            width:80%;
+            margin:14px 0;
+            justify-content space-between;
+        }
+        .gender-details{
+
+        }
+        .gender-details .category label{
+            display:flex;
+            align-items:center;
+        }
+        .gender-details .category .dot{
+            height:18px;
+            width 18px;
+            background:#310A2B;
+            border-radius:50%;
+            margin-left:10px;
+            border:5px solid transparent;
+        }
+        form .button{
+            height:45px;
+            margin: 45px 0;
+        }
+            form .button input {
+                height: 100%;
+                width: 100%;
+                outline: none;
+				font-weight: bold;
+                color: white;
+                border: none;
+                font-size: 10px;
+                font-weight:500;
+                border-radius:5px;
+                letter-spacing:1px;
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(purple.jpg);
+            }
+           
+            form .button input{
+                background: #310A2B;
+            }
+            @media(max-width:584)
+            {
+                .container{
+                    max-width:100%;
+                }
+            }
+        form .user-details .input-box{
+            margin-bottom:15px;
+            width:100%;
+        }
+        form .gender-details .category{
+            width:100%;
+        }
+        .container form .user-details{
+            max-height:500px;
+            overflow-y:scroll;
+        }
+    </style>
+       
+
+
+        
+</head >
+        
+<body >
+    <div class="container">
+        <div class="title">SIGN UP HERE</div> 
+        <form action="myform.html">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="Enter your first name" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Enter your last name" required />
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your phone number" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" required />
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Address 1</span>
+                    <input type="text" placeholder="Enter your address 1" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter your city" />
+                </div>
+                <div class="input-box">
+                    <span class="details">State</span>
+                    <input type="text" placeholder="Enter your state" />
+                </div>
+                <div class="input-box">
+                    <span class="details">Address 2</span>
+                    <input type="text" placeholder="Enter your address 2" />
+                </div>
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter your city" />
+                </div>
+                <div class="input-box">
+                    <span class="details">State</span>
+                    <input type="text" placeholder="Enter your state" />
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter username" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter password" required />
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" placeholder="Enter password again" required />
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" value="Click Here After Finish Sign Up" />
+            </div>
+        </form>
+    </div>
+       
+ </body >
+        
+</html >

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="ssslogo.png" />
+	<style>
+body {
+  background-image: url("purple.png");
+}
+</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(resumeback.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            margin: 50px;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #3D073E;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0,0,0,0,1);
+        }
+
+            .container .left_Side {
+                position: relative;
+                background: #red;
+                padding: 40px;
+            }
+
+        .profileText {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2)
+        }
+
+            .profileText .imgBx {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+                .profileText .imgBx img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            .profileText h2 {
+                color: #ffffff;
+                font-size: 1.2em;
+                margin-top: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                line-height: 1.4em;
+            }
+
+                .profileText h2 span {
+                    font-size: 0.8em;
+                    font-weight: 300;
+                }
+            .contactInfo{
+                padding-top: 40px;
+            }
+            .title{
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+            .contactInfo ul{
+                position: relative;
+            }
+            .contactInfo ul li{
+                list-style: none;
+                position:relative;
+                margin: 10px 0;
+                cursor: pointer;
+            }
+            .contactInfo ul li .icon{
+                display: inline-block;
+                width: 30px;
+                font-size: 18px;
+                color: #03a9f4;
+            }
+            .contactInfo ul li span{
+                color: aliceblue;
+                font-weight: 300;
+            }
+            .contactInfo.education li{
+                margin-bottom:15px;
+            }
+        .contactInfo.education h5 {
+            color: #03a9f4;
+            font-weight:500;
+        }
+        .contactInfo.education h4 {
+            color: white;
+            font-weight: 300;
+        }
+
+        .contactInfo.education h3 {
+            color: white;
+            font-weight: 300;
+        }
+            .container .right_Side {
+                position: relative;
+                background: #E99EEA;
+                padding: 40px;
+            }
+
+        .about{
+            margin-bottom: 50px;
+        }
+        .about:last-child{
+            margin-bottom:0;
+        }
+        .title2{
+            color: #003147;
+            text-transform:uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #808080;
+        }
+        .about .box{
+            display:flex;
+            flex-direction: row;
+            margin: 20px 0;
+        }
+        .about .box .year_company{
+            min-width:150px;
+        }
+            .about .box .year_company h5 {
+                text-transform: uppercase;
+                color: #848c90;
+                font-weight: 600;
+            }
+            .about .box .text h4{
+                text-transform: uppercase;
+                color: #2a7da2;
+                font-size:16px;
+            }
+
+        .about .text ul li {
+            color: #003147;
+            font-weight: 300;
+            position: relative;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .skills .box{
+            position:relative;
+            width: 100%;
+            display:grid;
+            grid-template-columns:150px 1fr;
+            justify-content:center;
+            align-items:center;
+        }
+        .skills .box h4{
+            text-transform: uppercase;
+            color: #848c99;
+            font-weight:500;
+
+        }
+        .skills .box .percent{
+            position: relative;
+            width:100%;
+            height: 10px;
+            background: white;;
+        }
+            .skills .box .percent div{
+                position:absolute;
+                top:0;
+                left: 0;
+                height:100%;
+                background: #3D0C3E;;
+            }
+            .interest ul{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .interest ul li{
+                list-style: none;
+                color: #333;
+                font-weight:600;
+                margin: 10px 0;
+            }
+            .interest ul li .fa{
+                color: #03a9f4;
+                font-size: 18px;
+                width:20px;
+            }
+
+
+        .download ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+            .download ul li {
+                list-style: none;
+               
+                margin: 10px 0;
+            }
+
+        .home {
+            display: inline-block;
+            padding: 20px 50px;
+            color: #3D0C3E;;
+            border: 2px solid #3D0C3E;;
+            border-radius: 6px;
+            transition: .3s linear;
+        }
+
+            .home:hover {
+                background: #3D0C3E;;
+                color: white;
+            }
+
+            @media(max-width: 1000px){
+                .container{
+                    margin:10px;
+                    grid-template-columns:repeat(1,1fr);
+                }
+                .interest ul {
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="sofie7.jpeg">
+                </div>
+                <h2>SOFIE SOFEA BINTI AHMAD SAHARUDDIN<br><span>STUDENT</span></h2>
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title"> Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">0137033093</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">sofea1266@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">www.sofea1266web.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin.com/sofie</span>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Kuala Kangsar, Perak</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="contactInfo education">
+                <h3 class="title"><b>Education<b/></h3>
+                <ul>
+				<li>
+                        <h5>2014-2019</h5>
+                        <h3>SPM HOLDER 9A</h3>
+                        <h4>Science Stream</h4>
+
+                        <h4>SMK Raja Perempuan Kelsom</h4>
+                    </li>
+                    <li>
+                        <h5>2020 - 2021</h5>
+                        <h3>3.94 CGPA</h3>
+                        <h4>SCIENCE COMPUTER</h4>
+
+                        <h4>Perak Matriculation College</h4>
+                    </li>
+                    <li>
+                        <h5>2021 - Current</h5>
+                        <h3>3.58 GPA</h3>
+                        <h4>BACHELOR OF COMPUTER SCIENCE (HONS.) NETCENTRIC COMPUTING</h4>
+
+                        <h4>UiTM Shah Alam</h4>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="right_Side">
+            <div class="about">
+                <h2 class="title2">About Me</h2>
+                <p style="font-family: comic sans;color: #3D0C3E;">
+                    Motivated and detail-oriented programmer with a passion for website development. Experienced in a variety of programming languages. Strong problem-solving skills and ability to work well independently or as part of a team. Always looking to learn and grow in a fast-paced environment.
+                </p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5 style="font-family: comic sans;color: #3D0C3E;">Part Time</h5>
+                        <h5 style="font-family: comic sans;color: #3D0C3E;">2020-2022</h5>
+                        <h5 style="font-family: comic sans;color: #3D0C3E;">TSI Company</h5>
+                    </div>
+                    <div class="text">
+                        <h4 style="font-family: comic sans;color: #3D0C3E;">Programmer</h4>
+                        <ul>
+                            <li>
+                                <h5 style="font-family: comic sans;color: #3D0C3E;">Worked with a team of programmers and contributed to the development of a project.</h5>
+                            </li>
+                            <li>
+                                <h5 style="font-family: comic sans;color: #3D0C3E;">Involved testing and debugging code to identify and fix errors.</h5>
+                            </li>
+                            <li>
+                                <h5 style="font-family: comic sans;color: #3D0C3E;">Responsible for developing new features or functionality for an existing application or website. </h5>
+                            </li>
+                            <li>
+                                <h5 style="font-family: comic sans;color: #3D0C3E;">Involved attending training sessions or self-study to gain familiarity with the new technology.</h5>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="about skills">
+                <h2 class="title2">Skills</h2>
+                <div class="box">
+                    <h4 style="font-family: comic sans;color: #3D0C3E;">Html</h4>
+                    <div class="percent">
+                        <div style="width:90%; color: #3D0C3E;""></div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <h4 style="font-family: comic sans;color: #3D0C3E;">C++</h4>
+                    <div class="percent">
+                        <div style="width:95%; color: #3D0C3E;"></div>
+                    </div>
+
+                </div><div class="box">
+                    <h4 style="font-family: comic sans;color: #3D0C3E;">JavaScript</h4>
+                    <div class="percent">
+                        <div style="width:70%; color: #3D0C3E;"></div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <h4 style="font-family: comic sans;color: #3D0C3E;">Photoshop</h4>
+                    <div class="percent">
+                        <div style="width:70%; color: #3D0C3E;"></div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <h4 style="font-family: comic sans;color: #3D0C3E;">CSS</h4>
+                    <div class="percent">
+                        <div style="width:70%; color: #3D0C3E;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about interest">
+                <h2 class="title2">Interest</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gamming</li>
+                    <li><i class="fa fa-futbol-o" aria-hidden="true"></i>Golfing</li>
+                    <li><i class="fa fa-tree" aria-hidden="true"></i>Hiking</li>
+                    <li><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</li>
+                </ul>
+            </div>
+
+            <div class="about download">
+                <ul>
+                    <li>
+                    <a  href="resumee.png" download class="home">
+                        DOWNLOAD RESUME</a>
+                     </li>
+                    <li><a href="myhomepage.html" class="home">HOME PAGE</a></li>
+                    
+                </ul>
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="icon" type="image/png" href="ssslogo.png" />
+	 
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(purple.jpg);
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .loginbox {
+            width: 800px;
+            height: 420px;
+            background: #808080;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 20px;
+        }
+        h1{
+           margin: 50px;
+            text-align:center;
+            
+            font-weight:500;
+        }
+        table {
+            border-spacing: 0;
+            
+        }
+        td{
+            width:200px;
+            border:1px solid black;
+            height:40px;
+            text-align:center;
+        }
+        .row {
+            background-color: #5A1450;
+            text-align:center;
+        }
+        th{
+            height:30px;
+            border:1px solid black;
+        }
+        .download ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            top:87%;
+            left: 50%;
+            padding: 20px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+            .download ul li {
+                list-style: none;
+                margin: 10px 0;
+            }
+
+        .home {
+            display: inline-block;
+            padding: 20px 50px;
+            color: black;
+            border: 2px solid #5A1450;
+            border-radius: 6px;
+            transition: .3s linear;
+        }
+
+            .home:hover {
+                background: #5A1450;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+
+    <h1 style="font-family: harrington;color: white">March-August 2023 Time Table</h1>
+    <div class="loginbox">
+        <table>
+            <tr class="row">
+                <th bgcolor="#5A1450">DAYS</th>
+                <th>0800 - 1000</th>
+                <th>1000 - 1200</th>
+                <th>1200 - 1400</th>
+                <th>1400 - 1600</th>
+                <th>1600 - 1800</th>
+
+            </tr>
+            <tr>
+                <td bgcolor="#5A1450">MONDAY</td>
+                <td><a href="iot.png">ITT569</a></td>
+                <td><a href="elc.png">ELC550</td>
+                <td></td>
+                <td><a href="disc.png">CSC510</td>
+                <td><a href="ai.png">ITS462</td>
+            </tr>
+            <tr>
+                <td bgcolor="#5A1450">TUESDAY</td>
+                <td><a href="ai.png">ITS462</td>
+                <td><a href="front.png">ITT588</td>
+                <td></td>
+                <td> <a href="tmc.png">TMC451</td>
+                <td><a href="dyn.png">CSC574</td>
+            </tr>
+            <tr>
+                <td bgcolor="#5A1450">WEDNESDAY</td>
+                <td><a href="dyn.png">CSC574</td>
+                <td><a href="front.png">ITT588</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td bgcolor="#5A1450">THURSDAY</td>
+                <td><a href="iot.png">ITT569</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="sec.png">ITT557</td>
+            </tr>
+            <tr>
+                <td bgcolor="#5A1450">FRIDAY</td>
+                <td><a href="sec.png">ITT557</td>
+                <td><a href="disc.png">CSC510</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="about download">
+            <ul>
+                <li>
+                    <a href="ttb.png" download class="home">
+                        Download Timetable
+                    </a>
+                </li>
+                <li><a href="myhomepage.html" class="home">Home Page</a></li>
+
+            </ul>
+ 
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

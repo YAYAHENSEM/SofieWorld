@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <style>
+		body {
+			background-image: url("soft.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mygallery</title>
+    <link rel="icon" type="image/png" href="ssslogo.jpeg" />
+    <style>
+        body{
+            font-family:sans-serif ;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+            cursor: pointer;
+            margin: 30px 0;
+        }
+
+        .menu-icon {
+            width: 25px;
+            cursor: pointer;
+            display: none;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+            nav ul li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 30px;
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 14px;
+                }
+
+                    nav ul li a:hover {
+                        color: purple;
+                    }
+        h1{
+            text-align:center;
+            color:forestgreen;
+            margin:30px 0 50px;
+        }
+        .gallery {
+            margin: 10px 70px;
+        }
+        .gallery img{
+            width:230px;
+            height:230px;
+            padding:5px;
+            filter:grayscale(100%);
+            transition:1s;
+        }
+        .gallery img:hover{
+            filter:grayscale(0);
+            transform: scale(1.1)
+        }
+    </style>
+
+</head >
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="homepage.html"><img src="ssslogo.png" class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="mybiography.html">Biography</a></li>
+                    <li><a href="myresume.html">Resume</a></li>
+                    <li><a href="mytimetable.html">Time Table</a></li>
+                    <li><a href="mygallery.html">Gallery</a></li>
+                    <li><a href="myform.html">Logout</a></li>
+
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menu()">
+        </div>
+
+        <h1 style="color:#6D2B67;font-family: harrington;">Welcome to my gallery</h1>
+		<h2 style="color: black;font-family:monospace;text-align: center;"> Let the picture speak on behalf me</h2>
+
+        <div class="gallery">
+		<h1 style="background-color:#DB8ED4;color:#6D2B67;font-family: harrington;"> Sofie's jpeg </h1>
+            <a href="sofie1.jpeg"><img src="sofie1.jpeg" /></a>
+            <a href="sofie2.jpeg"><img src="sofie2.jpeg" /></a>
+            <a href="sofie7.jpeg"><img src="sofie7.jpeg" /></a>
+            <a href="sofie4.jpeg"><img src="sofie4.jpeg" /></a>
+            <a href="sofie11.jpeg"><img src="sofie11.jpeg" /></a>
+			<a href="sofie8.jpeg"><img src="sofie8.jpeg" /></a>
+			
+		<h1 style="background-color:#DB8ED4;color:#6D2B67;font-family: harrington;">My Forever Family</h1>
+            <a href="fam1.jpeg"><img src="fam1.jpeg" /></a>
+            <a href="fam2.jpeg"><img src="fam2.jpeg" /></a>
+            <a href="fam3.jpeg"><img src="fam3.jpeg" /></a>
+            <a href="fam4.jpeg"><img src="fam4.jpeg" /></a>
+			
+		<h1 style="background-color:#DB8ED4;color:#6D2B67;font-family: harrington;">Friendship Last Forever</h1>
+            <a href="friend1.jpeg"><img src="friend1.jpeg" /></a>
+			<a href="friend2.jpeg"><img src="friend2.jpeg" /></a>
+			<a href="friend3.jpeg"><img src="friend3.jpeg" /></a>
+			<a href="friend5.jpeg"><img src="friend5.jpeg" /></a>
+			<a href="friend6.jpeg"><img src="friend6.jpeg" /></a>
+			<a href="friend7.jpeg"><img src="friend7.jpeg" /></a>
+		
+        <h1 style="background-color:#DB8ED4;color:#6D2B67;font-family: harrington;">Get To Know My Hometown</h1>	
+        <p style="font-family: comic sans;color: black;"> This is my hometown, Kuala Kangsar also known as KK. I raised in this small city since I was born. Here is a short clip about popular places in Kuala Kangsar. </p>	
+	    <video width="400" controls>
+  <source src="kualak.mp4" type="video/mp4">
+  <source src="kualak.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video> 
+         
+		 <p style="font-family: comic sans;color: black;"><p style="font-family: comic sans;color: black;">KK is famous with its "Labu Sayong".  It is one of Malay heritage crafts. This pottery craft has its own special feature. The water kept inside the clay pitcher is colder than usual and is said to be refreshing to the body when consumed. Let's take a look on how to make the clay pitcher. </p>	
+	    <video width="400" controls>
+  <source src="labu.mp4" type="video/mp4">
+  <source src="labu.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video></p>	
+	    
+		<p style="font-family: comic sans;color: black;"><p style="font-family: comic sans;color: black;">The Talang Cannon is a type of homemade firecracker that is popular during the Hari Raya festival season in Malaysia. It is a sign to start a new month , Syawal. The Talang Cannon was named after the original place where this cannon was played, namely in Kampung Talang, Kuala Kangsar Perak.</p>	
+	    <video width="400" controls>
+  <source src="cannon.mov" type="video/mp4">
+  <source src="cannon.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video></p>	
+ 
+        <p style="font-family: comic sans;color: black;"> What is attractive, famous and special food in Kuala Kangsar? YESSS !! Obviously the laksa and cendol </p> 
+ <video width="400" controls>
+  <source src="laksa.mp4" type="video/mp4">
+  <source src="laksa.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video></p>	
+
+<h1 style="background-color:#DB8ED4;color:#6D2B67;font-family: harrington;">My Top 5 Favourite Songs</h1>
+ <p style="font-family: comic sans;color: #9E2E8D;">1. Forget Me by Lewis Capaldi </p>
+  <audio controls autoplay>
+  <source src="fm.ogg" type="audio/ogg">
+  <source src="fm.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<p style="font-family: comic sans;color: black;">2. Car's Outside by James Arthur </p>
+  <audio controls autoplay>
+  <source src="co.ogg" type="audio/ogg">
+  <source src="co.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<p style="font-family: comic sans;color: #9E2E8D;">3. Kids Are Born Stars by Lauv </p>
+  <audio controls autoplay>
+  <source src="kabs.ogg" type="audio/ogg">
+  <source src="kabs.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<p style="font-family: comic sans;color: black;">4. Angels Like You by Miley Cyrus</p>
+  <audio controls autoplay>
+  <source src="aly.ogg" type="audio/ogg">
+  <source src="aly.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<p style="font-family: comic sans;color: #9E2E8D;">5. Poeple by Libianca</p>
+  <audio controls autoplay>
+  <source src="people.ogg" type="audio/ogg">
+  <source src="people.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+        </div>
+    </div>
+        
+</body>
+</html >

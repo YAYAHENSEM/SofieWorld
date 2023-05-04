@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>biography</title>
+        <link rel="icon" type="image/png" href="ssslogo.png"/>
+        <style>
+            h1, h2, h3, h4, h5, h6, p, a{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            body {
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(purple.jpg);
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .profileCard{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+                text-decoration: none;
+                width: 400px;
+                text-align: center;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .cardHeader{
+                background: #DDA7D8;
+                padding: 60px 40px;
+            }
+            .pic{
+                display: inline-block;
+                padding: 8px;
+                background: linear-gradient(130deg,#74b9ff,#e66767);
+                margin: auto;
+                border-radius: 50%;
+                background-size: 200% 200%;
+                animation: animated-gradient 2s linear infinite;
+            }
+            @keyframes animated-gradient{
+                25%{
+                    background-position: left bottom;
+                }50%{
+                    background-position: right bottom;
+                }75%{
+                    background-position: right top;
+                }100%{
+                    background-position: left top;
+                }
+            }
+            .pic img{
+                display: block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .name{
+                color: #4B1446;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            .desc{
+                font-size: 14px;
+                color: black;
+            }
+            .sm{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+            }
+            .sm h5{
+                color: #4B1446;
+                font-size: 12px;
+                transition: .3s linear;
+            }
+            .sm h5:hover{
+                color: white;
+            }
+            .home{
+                display: inline-block;
+                padding: 12px 50px;
+                color: #630F58;
+                border: 2px solid #630F58;
+                border-radius: 6px;
+                margin-top: 16px;
+                transition: .3s linear;
+            }
+            .home:hover{
+                background: #FD7EC3;
+                color: #894783;
+            }
+            .cardFooter {
+                background: #D5DBDB;
+                padding: 60px 10px;
+            }
+            .numbers{
+                display: flex;
+                align-items: center;
+            }
+            .item{
+                flex: 1;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: #e66767;
+            }
+            .item span{
+                display: block;
+                color: #2c3a47;
+                font-size: 30px;
+            }
+            .border{
+                width: 1px;
+                height: 30px;
+                background: gray;
+            }
+            .sociallinks img {
+                height: 20px;
+                margin: 20px;
+                cursor: pointer;
+            }
+            .sociallinks {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profileCard">
+            <div class="cardHeader">
+                <div class="pic">
+                    <img src="sofie7.jpeg" alt="sofie" >
+                </div>
+                <div class="name">CATCH UP WITH SOFIE</div>
+                <div class="desc">My name is Sofie Sofea binti Ahmad Saharuddin My student id is 2021494672</div>
+                <div class="sm">
+                    <h5>Hello, nice to meet you !</h5>
+                </div>
+                <a href="myhomepage.html" class="home">HOME PAGE</a>
+            </div>
+            <div class="cardFooter">
+                <div class="numbers">
+                    <div class="item">
+                        <div class="sociallinks">
+                            <a href="https://www.facebook.com/sofie.najwa.1" target="_blank"><img src="fb.png"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="item">
+                        <div class="sociallinks">
+                            <a href="https://www.instagram.com/ms_sofiee/" target="_blank"><img src="ig.png"></a>
+                            
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="item">
+                        <div class="sociallinks">
+                            <a href="https://twitter.com/craniumsofea" target="_blank"><img src="twitter.png"></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+    </body>
+</html>
